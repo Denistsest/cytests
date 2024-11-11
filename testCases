@@ -1,0 +1,68 @@
+Case 1: 
+Check registration with email flow 
+1.	Open https://www.booking.com/ link 
+2.	Click on register button 
+3.	Fill email 
+4.	Click on “Continue with email” button 
+5.	Fill same value in password and Confirm password fields
+6.	Click on Create account
+Expected result: Account created, email for confirmed email address sends to mail and new user is login to system 
+Case 5:
+Check registration flow with shared email 
+1.	Open https://account.booking.com/sign-in link
+2.	Fill email from existing user 
+3.	Click on “Continue with email” button
+Expected result: https://account.booking.com/sign-in/password link opened and user in able to login from this system, new account is not created
+Case 2: 
+Check email validation during registration with email flow 
+1.	Open https://account.booking.com/sign-in link 
+2.	Click on register button 
+3.	Fill invalid value to email field
+4.	 Text “Make sure the email address you entered is correct.” appears under email field
+
+Expected result: Email validation messages appears
+Case 3: 
+Check password validation during registration with email flow 
+1.	Open https://account.booking.com/sign-in link 
+2.	Click on register button 
+3.	Fill valid value to email field
+4.	Click on “Continue with email” button 
+5.	Click on Create new account button
+6.	Text “Please enter your new password” appears under password field
+7.	Fill less than 10 symbols in password field
+8.	Text “Your password must be at least 10 characters” appears under password field
+9.	Fill 10 letters in password field 
+10.	Text “Your password must include at least one number”
+11.	Fill 10 lowercase letters and 1 digit in password field
+12.	Text “Your password must include at least one uppercase letter”
+13.	Fill 10 uppercase letters and 1 digit in password field
+14.	Text “Your password must include at least one lowercase letter”
+Expected result: Password validation messages appears 
+
+Case 4: 
+Check confirmed password validation during registration with email flow 
+1.	Open https://account.booking.com/sign-in link 
+2.	Click on register button 
+3.	Fill valid value to email field
+4.	Click on “Continue with email” button 
+5.	Click on Create new account button
+6.	Text “Confirm your password” appears under Confirmed password field
+7.	Fill different values to Password and Confirmed password fields
+8.	 Text “The passwords you entered didn't match – try again” appears under Confirmed password field
+Expected result: Confirmed password validation messages appears 
+Case 6: 
+Check components on sign-in page
+1.	Open https://account.booking.com/sign-in link 
+2.	Check that header contains: logo with redirect to main page, switch language button, help button which redirect to    https://secure.booking.com/help
+3.	Check that body of page contains: text “Sign in or create an account
+4.	You can sign in using your Booking.com account to access our services.”, Email field, Continue with email button, login with google button, login with apple button, login with facebook button
+5.	Check that footer contains:  text “By signing in or creating an account, you agree with our Terms & Conditions and Privacy Statement. All rights reserved.Copyright (2006-2024) – Booking.com™”, hyperlink text “By signing in or creating an account, you agree with our Terms & Conditions” which  redirect to https://www.booking.com/content/terms, hyperlink text Privacy Statement which redirect to https://www.booking.com/content/privacy
+Expected result: All components displayed on page 
+Case 7: 
+Check components on register/password page
+1.	Open https://account.booking.com/register/password link
+2.	Check that header contains: logo with redirect to main page, switch language button, help button which redirect to    https://secure.booking.com/help
+3.	Check that body of page contains: text “Create password
+4.	Use a minimum of 10 characters, including uppercase letters, lowercase letters, and numbers..”, Password field, Confirmed Password field, Create account button, 
+5.	Check that footer contains:  text “By signing in or creating an account, you agree with our Terms & Conditions and Privacy Statement. All rights reserved.Copyright (2006-2024) – Booking.com™”, hyperlink text “By signing in or creating an account, you agree with our Terms & Conditions” which  redirect to https://www.booking.com/content/terms, hyperlink text Privacy Statement which redirect to https://www.booking.com/content/privacy
+Expected result: All components displayed on page 
